@@ -14,7 +14,7 @@ BuildRequires:  openssl-devel
 BuildRequires:  pulseaudio-devel
 BuildRequires:  pkgconfig
 BuildRequires:  zlib-devel
-BuildRequires:  opt-qt5-qtquickontrols2-devel >= 5.15.8
+BuildRequires:  opt-qt5-qtquickcontrols2-devel >= 5.15.8
 BuildRequires:  opt-qt5-qtsvg-devel >= 5.15.8
 BuildRequires:  opt-qt5-qtbase-devel >= 5.15.8
 BuildRequires:  pkgconfig(noson) >= 2.10.0
