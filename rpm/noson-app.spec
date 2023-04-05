@@ -28,6 +28,9 @@ queues and playlists can be managed, and playback be controlled.
 %autosetup -n %{name}-%{version}/upstream -p1
 
 %build
+export QTDIR=%{_opt_qt5_prefix}
+touch .git
+
 %cmake \
     -DCMAKE_BUILD_TYPE=Release \
     -DBUILD_DEPENDENCIES=OFF \
