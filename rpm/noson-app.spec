@@ -34,7 +34,7 @@ touch .git
 %cmake \
     -DCMAKE_BUILD_TYPE=Release \
     -DBUILD_DEPENDENCIES=OFF \
-    -DCMAKE_MODULE_PATH:PATH=%{_opt_qt5_libdir}/cmake \
+    -DCMAKE_PREFIX_PATH:PATH=%{_opt_qt5_prefix} \
     -DBUILD_LIBNOSON=OFF
 %make_build
 
