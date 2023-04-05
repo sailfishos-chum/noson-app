@@ -31,7 +31,7 @@ queues and playlists can be managed, and playback be controlled.
 %cmake \
     -DCMAKE_BUILD_TYPE=Release \
     -DBUILD_DEPENDENCIES=OFF \
-    -DCMAKE_MODULE_PATH:PATH=%{_opt_qt5_libdir} \
+    -DCMAKE_MODULE_PATH:PATH=%{_opt_qt5_libdir}/cmake \
     -DBUILD_LIBNOSON=OFF
 %make_build
 
