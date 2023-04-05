@@ -26,7 +26,7 @@ library, and playing tracks or radio on any zones. Zone groups,
 queues and playlists can be managed, and playback be controlled.
 
 %prep
-%setup -q
+%autosetup -n %{name}-%{version}/upstream -p1
 
 %build
 %cmake \
