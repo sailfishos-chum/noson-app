@@ -29,6 +29,19 @@ Requires:       opt-qt5-sfos-maliit-platforminputcontext
 A controller for SONOS devices. It allows for browsing the music
 library, and playing tracks or radio on any zones. Zone groups,
 queues and playlists can be managed, and playback be controlled.
+%if 0%{?_chum}
+PackageName: Noson
+Type: desktop-application
+DeveloperName: Jean-Luc Barrière
+PackagerName: Adam Pigg
+Categories:
+ - Media
+ - Audio
+Custom:
+  Repo: https://github.com/janbar/noson-app
+  PackagingRepo: https://github.com/sailfishos-chum/noson-app
+Icon: https://github.com/janbar/noson-app/raw/5.4.0/gui/icons/noson-128x128.png
+%endif
 
 %prep
 %autosetup -n %{name}-%{version}/upstream -p1
@@ -48,7 +61,6 @@ touch .git
 %make_install -C build
 
 #Add custom .desktop file
-rm -f %{buildroot}/%{_datadir}/applications/io.github.janbar.noson.desktop
 install -p -m644 -D ../io.github.janbar.noson.desktop %{buildroot}/%{_datadir}/applications/io.github.janbar.noson.desktop
 
 %files
