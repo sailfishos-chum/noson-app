@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=noson
+Icon=noson
+Terminal=false
+Type=Application
+Exec=qt-runner /usr/bin/noson-app
+
+[X-Sailjail]
+Sandboxing=Disabled
