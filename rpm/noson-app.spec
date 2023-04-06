@@ -18,6 +18,11 @@ BuildRequires:  opt-qt5-qtquickcontrols2-devel >= 5.15.8
 BuildRequires:  opt-qt5-qtsvg-devel >= 5.15.8
 BuildRequires:  opt-qt5-qtbase-devel >= 5.15.8
 BuildRequires:  pkgconfig(noson) >= 2.10.0
+Requires:       qt-runner
+Requires:       opt-qt5-qtquickcontrols2 >= 5.15.8
+Requires:       opt-qt5-qtwayland >= 5.15.8
+Requires:       opt-qt5-sfos-maliit-platforminputcontext
+%{?opt_qt5_default_filter}
 
 %description
 A controller for SONOS devices. It allows for browsing the music
