@@ -36,10 +36,8 @@ queues and playlists can be managed, and playback be controlled.
 export QTDIR=%{_opt_qt5_prefix}
 touch .git
 
-%cmake \
-    -DCMAKE_BUILD_TYPE=Release \
+%_opt_cmake_kf5 \
     -DBUILD_DEPENDENCIES=OFF \
-    -DCMAKE_PREFIX_PATH:PATH=%{_opt_qt5_prefix} \
     -DBUILD_LIBNOSON=OFF
 %make_build
 
