@@ -48,6 +48,7 @@ touch .git
 %make_install -C build
 
 #Add custom .desktop file
+rm -f %{buildroot}/%{_datadir}/applications/io.github.janbar.noson.desktop
 install -p -m644 -D io.github.janbar.noson.desktop %{buildroot}/%{_datadir}/applications/io.github.janbar.noson.desktop
 
 %files
