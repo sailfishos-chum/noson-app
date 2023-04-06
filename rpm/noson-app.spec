@@ -41,6 +41,10 @@ Custom:
   Repo: https://github.com/janbar/noson-app
   PackagingRepo: https://github.com/sailfishos-chum/noson-app
 Icon: https://github.com/janbar/noson-app/raw/5.4.0/gui/icons/noson-128x128.png
+Screenshots:
+ - https://github.com/sailfishos-chum/noson-app/raw/master/screenshot1.png
+ - https://github.com/sailfishos-chum/noson-app/raw/master/screenshot2.png
+ - https://github.com/sailfishos-chum/noson-app/raw/master/screenshot3.png
 %endif
 
 %prep
