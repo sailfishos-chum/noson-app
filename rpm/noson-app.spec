@@ -38,7 +38,9 @@ touch .git
 
 %_opt_cmake_kf5 \
     -DBUILD_DEPENDENCIES=OFF \
-    -DBUILD_LIBNOSON=OFF
+    -DBUILD_LIBNOSON=OFF \
+    -DCMAKE_INSTALL_PREFIX:PATH=/usr/
+
 %make_build
 
 %install
