@@ -4,6 +4,8 @@ Icon=noson
 Terminal=false
 Type=Application
 Exec=qt-runner /usr/bin/noson-app
+X-Nemo-Single-Instance=no
+X-Nemo-Application-Type=no-invoker
 
 [X-Sailjail]
 Sandboxing=Disabled
