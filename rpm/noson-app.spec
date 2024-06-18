@@ -1,5 +1,5 @@
 Name:           noson-app
-Version:        5.4.0
+Version:        5.6.6
 Release:        0
 Summary:        SONOS device controller
 License:        GPL-3.0-or-later
@@ -18,7 +18,7 @@ BuildRequires:  opt-kf5-rpm-macros
 BuildRequires:  opt-qt5-qtquickcontrols2-devel >= 5.15.8
 BuildRequires:  opt-qt5-qtsvg-devel >= 5.15.8
 BuildRequires:  opt-qt5-qtbase-devel >= 5.15.8
-BuildRequires:  pkgconfig(noson) >= 2.10.0
+BuildRequires:  pkgconfig(noson) >= 2.12.0
 Requires:       qt-runner
 Requires:       opt-qt5-qtquickcontrols2 >= 5.15.8
 Requires:       opt-qt5-qtwayland >= 5.15.8
@@ -60,10 +60,10 @@ touch .git
     -DBUILD_LIBNOSON=OFF \
     -DCMAKE_INSTALL_PREFIX:PATH=/usr/
 
-%make_build
+%cmake_build
 
 %install
-%make_install -C build
+%cmake_install
 
 #Add custom .desktop file
 install -p -m644 -D ../io.github.janbar.noson.desktop %{buildroot}/%{_datadir}/applications/io.github.janbar.noson.desktop
