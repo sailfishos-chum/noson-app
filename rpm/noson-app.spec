@@ -24,6 +24,8 @@ Requires:       opt-qt5-qtquickcontrols2 >= 5.15.8
 Requires:       opt-qt5-qtwayland >= 5.15.8
 Requires:       opt-qt5-sfos-maliit-platforminputcontext
 Requires:       opt-qt5-qtsvg >= 5.15.8
+Patch0:         dont-force-xcb.patch
+
 %{?opt_qt5_default_filter}
 
 %description
